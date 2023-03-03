@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css//style.css">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/nossosServicos/nossosServicos-cards.css">
+  <link rel="stylesheet" href="./assets/css/banner/banner.css">
+  <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css">
+  <link rel="stylesheet" href="./assets/css/nossosServicos/nossosServicos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <title>Porfolio</title>
+</head>
+<body>
+    <header class="cabecalho">
+      <nav class="navigation">
+        <img class="logo" src="./img/logo.svg" alt="">
+        <ul class="itens">
+          <li class="itensli"><a href="#">Serviços</a></li>
+          <li class="itensli"><a href="#">Clientes</a></li>
+          <li class="itensli"><a href="#">Blog</a></li>
+          <li class="itensli"><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="banner">
+        <video id="background-video" autoplay loop muted >
+            <source src="./img/video.mp4" type="video/mp4">
+            </video>
+        <h1 class="titulo">Somos uma <span>agência</span> <br>
+            Movidos por <span>Resultados.</span></h1>
+        
+        <div class="botoes-banner">
+            <a href="#" class="button">Serviços</a>
+            <a href="#" class="ghost-button">Contato</a>
+        </div>
+        <!-- scrollSVG -->
+        <a href="#nossos-servicos" class="scrollSVG">
+        <div class="scrolldown-wrapper">
+            <div class="scrolldown">
+                <svg height="30" width="10">
+                    <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
+                    <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+                </svg>
+            </div>
+            </a>
+               
+        </div>
+    </section>
+    <main>
+        <section id="nossos-servicos"class="nossos-servicos">
+            <div class="textos-servicos">
+                <p class="subtitulo-servicos">Nossos Serviços</p>
+                <h2 class="titulo-servicos">O que podemos fazer por você?</h2>
+            </div>
+            <div class="blocos">
+                <div class="card cricaoSites">
+                    <img src="img/imgCriacaoSites.jpg" alt="" class="imagem-bloco">
+                    <div class="textos-bloco">
+                        <h1 class="titulo-bloco">Criação de Sites e Lojas Virtuais</h1>
+                        <p class="texto-bloco"><span>Criação de sites</span> únicos e exclusivos, além de serem 100% responsivos, que se adaptam em qualquer tipo de dispositivo. <br>
+   <br> <span>Lojas virtuais</span> inteligentes, 100% automatizadas e integradas com os principais meios de pagamentos e sistemas de gestão (ERPs)..</p>
+                    </div>
+                   
+                </div>
+                <div class="card gestaoTrafego">
+                    <img src="img/imgGestaoTrafego.jpg" alt="" class="imagem-bloco">
+                    <div class="textos-bloco">
+                        <h1 class="titulo-bloco">Gestão de Trafégo e Campanhas Ads</h1>
+                        <p class="texto-bloco"><span>Planos de marketing</span> com estratégias de SEO (Search Engine Organization) para melhor posicionamento do seu site em resultados de pesquisas orgânicas.
+    
+                          <br><br><span>Gestão de Campanhas</span> de Anúncios de Alta Conversão: Google Ads, Facebook Ads, Instagram Ads, Linkedin Ads, Youtube Ads e outros...</p>
+                    </div>
+                    </div>
+                   
+                <div class="card designGrafico">
+                    <img src="img/imgDesignGraficojpg.jpg" alt="" class="imagem-bloco">
+                    <div class="textos-bloco">
+                        <h1 class="titulo-bloco">Design Gráfico e Logotipos</h1>
+                        <p class="texto-bloco">Criação de logotipos profissionais, para sua empresa. <br>
+
+                          <br>  Criação de artes visuais sob medida para diversas finalidades, desde campanhas de marketing, redes sociais, exposição de produtos etc.
+                            
+                       <br>   <br>  UX e UI de alta performance para projetos Web e Aplicativos.</p>
+
+                    </div>
+                   
+                </div>
+            </div>       
+         </section>
+    </main>
+    <script>
+        document.querySelector('video').playbackRate = 0.85;
+    </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+.banner{
+    /* background-image: url("/img/coding-programming-working-9249201.jpg"); */
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 0px 188px;
+    gap: 25px;
+    overflow: hidden;
+    box-sizing: border-box;
+
+
+    
+}
+
+/* Scroll Down */
+
+.scrolldown-wrapper {
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	bottom: 10%;
+	transform: translate(-50%, -50%);
+}
+  
+.scrolldown {
+	border: 2px solid #FFFFFF;
+	border-radius: 30px;
+	height: 46px;
+	margin: 0 auto 8px;
+	text-align: center;
+	width: 30px;
+}
+
+.scrolldown-p1,
+.scrolldown-p2 {
+	animation-duration: 1.5s;
+	animation-name: scrolldown;
+	animation-iteration-count: infinite;
+	fill: #FFFFFF;
+}
+  
+.scrolldown-p2 {
+	animation-delay: .75s;
+}
+
+@keyframes scrolldown {
+	0% {
+		opacity: 0;
+		transform: translate(0, -8px);
+	}
+	50% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(0, 8px);
+	}
+}
+
+#background-video {
+    width: auto;
+    height: auto;
+    object-fit:cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: brightness(0.4);
+    box-sizing: border-box;
+    overflow: hidden;
+
+  }
+
+.titulo{
+    font-size: 3rem;
+    color: white;
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    width: 90vw;
+}
+
+.banner span {
+    color: var(--red)
+}
+
+.botoes-banner{
+    display: flex;
+    justify-content: start;
+    font-family: 'Montserrat', sans-serif;
+    width:35rem;
+    margin: 0px 5px;
+    gap: 50px;
+    font-size: 18px;
+
+}
+
+.button{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 15px 30px;
+color: white;
+
+
+
+/* red */
+
+background: #E30613;
+border-radius: 4px;
+}
+
+.ghost-button{
+    background-color: none;
+    color: white;
+    border-bottom:  white 3px solid;
+
+    display: flex;
+    align-items: center;
+border-radius: 0px;
+
+}
+
+
+
+/* Mobile Banner */
+
+@media screen and (max-width:480px) {
+    .banner{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    }
+
+
+    .botoes-banner {
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .scrollSVG{
+        display: none;
+    }
+
+    
+}
