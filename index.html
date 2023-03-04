@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./assets/css/banner/banner.css">
   <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css">
   <link rel="stylesheet" href="./assets/css/nossosServicos/nossosServicos.css">
+  <link rel="stylesheet" href="./assets/css/portfolio/portfolio.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -23,7 +24,7 @@
 <body>
     <header class="cabecalho">
       <nav class="navigation">
-        <img class="logo" src="./img/logo.svg" alt="">
+        <a href="index.html"><img class="logo" src="./img/logo.svg" alt=""></a>
         <ul class="itens">
           <li class="itensli"><a href="#">Serviços</a></li>
           <li class="itensli"><a href="#">Clientes</a></li>
@@ -96,6 +97,25 @@
                    
                 </div>
             </div>       
+         </section>
+         <section id="portfolio"class="portfolio">
+            <div class="textos-servicos">
+                <p class="subtitulo-servicos">Projetos Incriveis</p>
+                <h2 class="titulo-servicos">Quem já ajudamos</h2>
+            </div>
+            <container class="portfolio--container">
+                <card class="portfolio--card dab">
+                    <div class="overlay">
+                        <div class="logo dab-logo"></div>
+                        <!-- <div class="titulo">Dab Áudio</div> -->
+                        <div class="texto">Criação de Site Institucional para empresa de som automobilistico</div>
+                    </div>
+                    <img src="" alt="" class="portfolio--img">
+                </card>
+                <card class="portfolio--card benquerer">
+                    <img src="" alt="" class="portfolio--img benquerer">
+                </card>
+            </container>
          </section>
     </main>
     <script>

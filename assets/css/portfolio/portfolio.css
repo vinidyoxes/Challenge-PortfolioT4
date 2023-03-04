@@ -1,0 +1,81 @@
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 50px;
+    gap: 50px;
+
+}
+
+.portfolio--container{
+    display: flex;
+}
+
+.portfolio--card {
+    width: 580px;
+    height: 340px;
+}
+
+
+
+.portfolio--img{
+    width: 100%;
+}
+
+.overlay {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #6b0000;
+    gap: 5px;
+    border-radius: 20px;
+  }
+  
+  .overlay .titulo, .overlay .texto{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 5%;
+    font-family: var(--montserrat);
+  }
+
+  .overlay .titulo{
+    font-size: 1.5rem;
+  }
+
+  .overlay .texto{
+    font-size: 1.2rem;
+  }
+
+  .dab:hover .overlay {
+    opacity: 0.9;
+  }
+
+  .dab-logo{
+    background-image: url("../../../img/logos/Logo-DAB-audio-300x131.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 80px;
+  }
+
+.dab {
+    background-image: url("/img/Dab-Mockup_1.png");
+    background-size: contain;
+}
+
+
+
+
+.benquerer{
+    background-image: url("/img/benquerer-mockupt.png");
+    background-size: contain;
+}
+
