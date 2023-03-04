@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="./assets/css//style.css">
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/nossosServicos/nossosServicos-cards.min.css">
-  <link rel="stylesheet" href="./assets/css/banner/banner.min.css">
+  <link rel="stylesheet" href="./assets/css/banner/banner.css">
   <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css">
   <link rel="stylesheet" href="./assets/css/nossosServicos/nossosServicos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,10 +33,10 @@
     </header>
     <section class="banner">
         <video id="background-video" autoplay loop muted >
-            <source src="./img/video.mp4" type="video/mp4">
+            <source src="./img/Tinta-58194.mp4" type="video/mp4">
             </video>
-        <h1 class="titulo">Somos uma <span>agência</span> <br>
-            Movidos por <span>Resultados.</span></h1>
+        <h1 class="titulo">Somos uma Agência <br>
+            Movidos por <span class="multiText">Resultados.</span></h1>
         
         <div class="botoes-banner">
             <a href="#" class="button">Serviços</a>
@@ -100,5 +100,13 @@
     <script>
         document.querySelector('video').playbackRate = 0.85;
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js" integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script> var typingEffect = new Typed(".multiText",{strings:["Resultados","Vendas","Sucesso"],
+    loop:true,
+    typeSpeed:100,
+    backSpeed:80,
+    startDelay:1000,
+    backDelay:1500
+}) </script>
 </body>
 </html>

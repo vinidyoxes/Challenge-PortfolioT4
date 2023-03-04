@@ -63,18 +63,32 @@
 #background-video {
     width: auto;
     height: auto;
+    min-width: 100%; 
+	min-height: 100%;
     object-fit:cover;
+    background-size:cover;
     position: fixed;
-    left: 0;
-    right: 0;
+    left: -50%;
     top: 0;
     bottom: 0;
     z-index: -1;
     filter: brightness(0.4);
-    box-sizing: border-box;
+    /* box-sizing: border-box;
     overflow: hidden;
+    background-position-x:right; */
 
   }
+
+  /* position: fixed; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -1000;
+	background: url(images/torre.jpg) no-repeat;
+	background-size: cover;  */
 
 .titulo{
     font-size: 3rem;
@@ -85,9 +99,7 @@
     width: 90vw;
 }
 
-.banner span {
-    color: var(--red)
-}
+
 
 .botoes-banner{
     display: flex;
@@ -155,6 +167,13 @@ border-radius: 0px;
 
     .scrollSVG{
         display: none;
+    }
+
+    #background-video{
+        object-fit: fill;
+        width: auto;
+        height: auto;
+        left: -200%;
     }
 
     
