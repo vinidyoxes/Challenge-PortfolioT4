@@ -1,0 +1,68 @@
+.nossosClientes{
+    background: #FFFF;
+    display: flex;
+    justify-content: space-around;
+    padding: 70px 25px;
+}
+
+.bloco--nossosClientes{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    
+}
+
+.titulo--nossosClientes{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 35px;
+/* identical to box height, or 117% */
+border-right: solid 2px #54595F;
+padding-right: 50px;
+}
+
+.titulo--nossosClientes p{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 140% */
+
+letter-spacing: 1.5px;
+text-transform: uppercase;
+
+color: #54595F;
+
+}
+
+.logos-nossosClientes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 523px;
+}
+
+.nossosClientes .logo{
+    width: 130px;
+    height: 50px;
+}
+
+.logo.dab{
+    background-image: url("../../../img/logos/Logo-DAB-audio-300x131.webp");
+    
+    width: 100px;
+}
+
+.logo.benquerer{
+    background-image: url(../../../img/logos/logo-benquerer.webp);
+}
+
+.logo.imperio{
+    background-image: url(../../../img/logos/logo-imperio.png);
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 65px;
+}

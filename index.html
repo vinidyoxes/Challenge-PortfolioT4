@@ -12,10 +12,16 @@
   <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css">
   <link rel="stylesheet" href="./assets/css/nossosServicos/nossosServicos.css">
   <link rel="stylesheet" href="./assets/css/portfolio/portfolio.css">
+  <link rel="stylesheet" href="./assets/css/quemSomos/quemSomos.css">
+  <link rel="stylesheet" href="./assets/css/nossosClientes/nossosClientes.css">
+  <link rel="stylesheet" href="./assets/css/contato/contato.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
@@ -101,7 +107,7 @@
          <section id="portfolio"class="portfolio">
             <div class="textos-servicos">
                 <p class="subtitulo-servicos">Projetos Incriveis</p>
-                <h2 class="titulo-servicos">Quem já ajudamos</h2>
+                <h2 class="titulo-servicos">Nosso Portfólio</h2>
             </div>
             <container class="portfolio--container">
                 <card class="portfolio--card dab">
@@ -110,11 +116,88 @@
                         <!-- <div class="titulo">Dab Áudio</div> -->
                         <div class="texto">Criação de Site Institucional para empresa de som automobilistico</div>
                     </div>
-                    <img src="" alt="" class="portfolio--img">
+                   
                 </card>
                 <card class="portfolio--card benquerer">
-                    <img src="" alt="" class="portfolio--img benquerer">
+                    <div class="overlay">
+                        <div class="logo benquerer-logo"></div>
+                        <!-- <div class="titulo">Dab Áudio</div> -->
+                        <div class="texto">Criação de Site Institucional para clinica geriatrica</div>
+                    </div>
+                    
                 </card>
+                <card class="portfolio--card imperioSapatilhas">
+                    <div class="overlay">
+                        <div class="logo imperio-logo"></div>
+                        <!-- <div class="titulo">Dab Áudio</div> -->
+                        <div class="texto">Criação de Loja Virtual para calçados femininos</div>
+                    </div>
+                   
+                </card>
+            </container>
+         </section>
+         <section class="quemSomos">
+            <container class="quemSomos--container">
+                <section class="quemSomos--bloco1">
+                    <h3 class="quemSomos--subtitulo"><span>movidos por resultados</span></h3>
+                    <h2 class="titulo">Isso é Fury Agency</h2>
+                    <p class="quemSomos--texto">Idealizada e fundada por Vinicius Henrique, um apaixonado por tecnologia e programação.<br>
+                        <br>Desde muito novo sempre mostrou paixão por computadores, mas sua jornada como programador levou bastante tempo.
+                       <br><br> Iniciou na área como UI/UX designer e Gestor de Trafégo em uma agência. Não satisfeito pelas metodologias aplicadas no mercado
+                        resolveu criar a sua propria agencia digital, que visa viabilizar a tecnologia para PMEs<br>
+                        <br> Você está pronto para o crescimento da sua empresa?</p>  </p>
+                </section>
+                <section class="quemSomos--bloco2">
+                    <div class="eu"></div>
+                </section>
+            </container>
+         </section>
+         <section class="nossosClientes">
+            <container class="bloco--nossosClientes">
+                <div class="titulo--nossosClientes">
+                    <p>Quem já atendemos</p>
+                    <h2>Nossos Clientes</h2>
+                </div>
+                <div class="logos-nossosClientes">
+                    <div class="logo dab"></div>
+                    <div class="logo benquerer"></div>
+                    <div class="logo imperio"></div>
+                </div>
+            </container>
+         </section>
+         <section class="contato">
+            <container class="contato--bloco">
+                <div class="contato--textos">
+                    <h2 class="contato--titulo">Por que esperar para ter resultados?</h2>
+                    <p class="contato--texto">Fale conosco e garanta o crescimento da sua empresa hoje mesmo!</p>
+                </div>
+               <form action="" class="contato--formulario">
+                <div class="input-container form--nome">
+                    <label for="nome" class="label-form">Digite seu nome</label>
+                    <input class="input" type="text" name="nome" id="nome" label="nome"  required>
+                </div>
+                <div class="input-container form--email">
+                    <label for="email" class="label-form">Digite seu Email</label>
+                    <input class="input"type="email" name="email" id="email" label="email" required>
+                </div>
+                <div class="input-container form--assunto">
+                    <label for="assunto" class="label-form">Assunto</label>
+                    <input class="input" type="text" name="assunto" id="email" label="assunto"  required>
+                </div>
+                <div class="input-container form--mensagem">
+                    <label for="assunto">Como posso ajudar você?</label>
+                    <textarea class="input" name="assunto" id="assunto" cols="30" rows="2"></textarea>
+                </div>
+                <!-- <div class="input-container form--senha">
+                    <label for="senha" class="label-form">Digite sua Senha</label>
+                    <input type="password" name="senha" id="senha" label="senha" placeholder="Digite sua Senha" pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm" 
+                    title="pelo menos 8 caracteres
+                    - deve conter pelo menos 1 letra maiúscula, 1 letra minúscula e 1 número
+                    - Pode conter caracteres especiais" minlength="6" required>
+                </div> -->
+                <button type="submit"class="contato--botao button" >Enviar</button>
+               </form>
+                
             </container>
          </section>
     </main>
@@ -122,6 +205,7 @@
         document.querySelector('video').playbackRate = 0.85;
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js" integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="nossosClientes.js"></script>
     <script> var typingEffect = new Typed(".multiText",{strings:["Resultados","Vendas","Sucesso"],
     loop:true,
     typeSpeed:100,

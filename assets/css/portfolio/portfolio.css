@@ -4,18 +4,26 @@
     justify-content: center;
     align-items: center;
     background-color: white;
-    padding: 50px;
+    padding: 50px 50px;
+    flex-wrap: wrap;
     gap: 50px;
+
 
 }
 
 .portfolio--container{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 50px 0;
+    
+    
 }
 
 .portfolio--card {
-    width: 580px;
+    width: 560px;
     height: 340px;
+    
 }
 
 
@@ -54,7 +62,7 @@
     font-size: 1.2rem;
   }
 
-  .dab:hover .overlay {
+  .portfolio--card:hover .overlay {
     opacity: 0.9;
   }
 
@@ -69,13 +77,45 @@
 .dab {
     background-image: url("/img/Dab-Mockup_1.png");
     background-size: contain;
+  background-repeat: no-repeat;
+
 }
-
-
-
 
 .benquerer{
     background-image: url("/img/benquerer-mockupt.png");
     background-size: contain;
+   background-repeat: no-repeat;
+
 }
 
+.benquerer-logo{
+  background-image: url("../../../img/logos/logo-benquerer.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 80px;
+}
+
+.imperioSapatilhas{
+  background-image: url("../../../img/mockup-imperium.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.imperio-logo{
+  background-image: url("../../../img/logos/logo-imperio.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 80px;
+  opacity: 1;
+}
+
+
+@media screen and (max-width:480px) {
+    .portfolio--container{
+        flex-direction: column;
+    }
+    
+}
